@@ -17,7 +17,7 @@ int main()
 int fibonacci()
 {
 
-int l,g,p;
+	int l,g,p;
     l=1;
     g=1;
     if(n>2)
