@@ -4,20 +4,23 @@
 using namespace std;
 
 
-int fibonacci();
-int capicua();
+int fibonacci(int n);
+int capicua(int n);
 int residuo(int a, int b);
-int primo(int n);
+int primo();
 
 int main()
 {
    cout<<"el residuo es:"<<residuo(27,4)<<endl;
+   cout<<capicua(311)<<endl;
+   cout<<fibonacci(3)<<endl;
+   primo();
+   
     return 0;
 }
 
-int fibonacci()
+int fibonacci(int n)
 {
-
 	int l,g,p;
     l=1;
     g=1;
@@ -38,10 +41,25 @@ int fibonacci()
     }
 
 }
-int capicua()
+int capicua(int n)
 {
-
-
+	int l,p,t;
+    l=n;
+    t=0;
+    while(l>0)
+    {
+        p=l%10;
+        l=l/10;
+        t=(t*10)+p;
+    }
+    if(n==t)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 int primo()
 {
@@ -67,10 +85,9 @@ int primo()
 		j++;
 	}
 	
-	printf("el numero primo es %d", im);
+	printf("el numero primo es %d%n", im);
 }
 
-}
 int residuo(int a, int b)
 {
     int div=0;
