@@ -17,6 +17,24 @@ int main()
 int fibonacci()
 {
 
+int l,g,p;
+    l=1;
+    g=1;
+    if(n>2)
+    {
+       while(n>2)
+        {
+            p=l+g;
+            l=g;
+            g=p;
+            n--;
+        }
+        return p;
+    }
+    else
+    {
+        return 1;
+    }
 
 }
 int capicua()
