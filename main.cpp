@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include<stdio.h>
+#include<conio.h>
 using namespace std;
 
 
@@ -42,8 +43,33 @@ int capicua()
 
 
 }
-int primo(int n)
+int primo()
 {
+int main()
+{
+	int a,j,p,im,c,i;
+	printf("ingresar que valor primo quiere \n");
+	scanf("%d", &a);
+	j=2;
+	p=0;
+	while(p<a){
+		i=1;
+		c=0;
+		while(i<=j){
+			if(j%i==0){
+				c++;
+			}
+			i++;
+			}
+			if(c==2){
+				p++;
+				im=j;
+		}
+		j++;
+	}
+	
+	printf("el numero primo es %d", im);
+}
 
 }
 int residuo(int a, int b)
