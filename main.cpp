@@ -45,8 +45,7 @@ int capicua()
 }
 int primo()
 {
-int main()
-{
+	//inge este código lo hice con la parte de ingresar los datos para que de la posición que quiera
 	int a,j,p,im,c,i;
 	printf("ingresar que valor primo quiere \n");
 	scanf("%d", &a);
